@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-eabl
+  namespace: jvm-build-ahcv-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:23aadfc74e4b851a514cd10536fdc1a7538baa08dc261a0c88136a80e468439d
+        name: container-image
+        resources: {}
+status: {}

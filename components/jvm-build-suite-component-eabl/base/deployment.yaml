@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-eabl
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:e56e88bcf13c4b61960ebb3b001f3101
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:23aadfc74e4b851a514cd10536fdc1a7538baa08dc261a0c88136a80e468439d
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
